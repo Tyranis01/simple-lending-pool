@@ -6,6 +6,12 @@ solc = "0.8.26"
 auto_detect_solc = true
 via_ir = true
 
+
+fs_permissions = [
+    { access = "read", path = "./broadcast" },
+    { access = "read", path = "./reports" },
+]
+
 remappings = [
     "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
     "@foundry-rs/=lib/foundry-rs/",
